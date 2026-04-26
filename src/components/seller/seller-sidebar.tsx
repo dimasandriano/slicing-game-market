@@ -14,7 +14,7 @@ export default function SellerSidebar() {
 			<div className="rounded-xl bg-[#1F2937] border border-[#374151] p-6">
 				<div className="flex flex-col items-center">
 					<div className="relative">
-						<div className="size-[100px] rounded-full overflow-hidden border-2 border-neutral-600">
+						<div className="size-[100px] rounded-full overflow-hidden">
 							<Image
 								src="/images/seller-avatar.jpg"
 								alt="BestSpeed"
@@ -23,7 +23,7 @@ export default function SellerSidebar() {
 								className="object-cover"
 							/>
 						</div>
-						<span className="absolute bottom-1 right-1 size-4 rounded-full bg-green-500 border-2 border-neutral-800" />
+						<span className="absolute bottom-1 right-2 size-4 rounded-full bg-green-500 border-2 border-neutral-800" />
 					</div>
 					<h2 className="mt-3 text-2xl font-bold text-white">BestSpeed</h2>
 					<div className="mt-1 flex items-center gap-0.5">
