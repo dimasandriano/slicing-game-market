@@ -43,12 +43,12 @@ function CarouselGradients() {
 	return (
 		<>
 			<div
-				className={`absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none bg-linear-to-r from-[#0d1117] to-transparent transition-opacity duration-300 ${
+				className={`absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none bg-linear-to-r from-background to-transparent transition-opacity duration-300 ${
 					canScrollPrev ? "opacity-100" : "opacity-0"
 				}`}
 			/>
 			<div
-				className={`absolute right-0 top-0 bottom-0 w-16 z-10 pointer-events-none bg-linear-to-l from-[#0d1117] to-transparent transition-opacity duration-300 ${
+				className={`absolute right-0 top-0 bottom-0 w-16 z-10 pointer-events-none bg-linear-to-l from-background to-transparent transition-opacity duration-300 ${
 					canScrollNext ? "opacity-100" : "opacity-0"
 				}`}
 			/>
@@ -64,13 +64,13 @@ function CarouselNavButtons() {
 			<button
 				onClick={scrollPrev}
 				disabled={!canScrollPrev}
-				className="size-8 rounded-full border-2 border-[#787FF6] flex items-center justify-center  hover:text-white  transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+				className="size-6 rounded-full border border-[#7BC5F5] flex items-center justify-center  hover:text-white  transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
 				<ArrowLeft className="size-4" />
 			</button>
 			<button
 				onClick={scrollNext}
 				disabled={!canScrollNext}
-				className="size-8 rounded-full border-2 border-[#787FF6] flex items-center justify-center  hover:text-white  transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+				className="size-6 rounded-full border border-[#7BC5F5] flex items-center justify-center  hover:text-white  transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
 				<ArrowRight className="size-4" />
 			</button>
 		</div>
