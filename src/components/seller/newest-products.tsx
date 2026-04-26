@@ -101,12 +101,7 @@ export default function NewestProducts() {
 					<CarouselContent className="-ml-4">
 						{products.map((product) => (
 							<CarouselItem key={product.id} className="pl-4 basis-auto">
-								<div
-									className="w-[530px] min-h-[254px] rounded-xl border border-[#374151] cursor-pointer p-3 gap-3 flex flex-col"
-									style={{
-										background:
-											"linear-gradient(0deg, #1F2937, #1F2937), linear-gradient(108.93deg, rgba(31,41,55,0) 46.97%, rgba(72,78,201,0.3) 100%)",
-									}}>
+								<div className="w-[530px] min-h-[254px] rounded-xl border border-[#374151] cursor-pointer p-3 gap-3 flex flex-col bg-linear-to-br from-[#1F2937] via-[#1F2937] to-[#293665]">
 									<div className="flex items-center justify-between">
 										<div className="flex items-center gap-2">
 											<div className="size-5 rounded-full overflow-hidden flex items-center justify-center">
